@@ -1,6 +1,6 @@
 # credit-risk-classification
 
-## Overview of the Analysis
+# Overview of the Analysis
 
 Lending companies lend money/properties to borrowers with the expectation that the borrower will either return the asset or repay the lender. Credit Risk is
 associated with a borrower not returning an asset or paying a loan back causing a lender to lose money. This is measured by lenders in many ways, however in
@@ -39,10 +39,10 @@ According to the confusion matrix in step 3 [Create a LRM w/ Resampled(oversampl
 
 
 
-## Results
+# Results
 
 
-### Logistic Regression Model fitted with Imbalanced Data:
+## Logistic Regression Model fitted with Imbalanced Data:
 
 
 The Logistic Regression model fitted with the Imbalanced DataSet predicted correctly healthy loans 100% of the time non-healthy loans 87% of the time.
@@ -57,7 +57,7 @@ According to the models recall scores, the model made no mistakes when predictin
 
 
 
-### Logistic Regression Model fitted with Balanced (oversampled) Data:
+## Logistic Regression Model fitted with Balanced (oversampled) Data:
 
 
 The Logistic Regression model fitted with the OverSampled DataSet predicted accurately healthy loans 100% of the time and non-healthy loans 87% of the time.
@@ -70,7 +70,7 @@ The model fitted with balanced (oversampled) data has a much lower possibility o
 
 According to the models recall scores, the model made no mistakes when predicting both healthy and non-healthy loans. The model also generated an accurace score of 99.6% due to the dataset being balanced.
 
-## Summary
+# Summary
 
 
 A lending company might want a model that requires classifying healthy loans and non-healthy loans correctly most of the time:
