@@ -33,17 +33,16 @@ model does an exceptional job in catching mistakes such as labeling non-healthy 
 
 According to the confusion matrix in step 3 [Create a LRM w/ Resampled(oversampled) Data]:
 
-Out of the 18,759 loan status's that are healthy, the model predicted 18,668 as healthy correctly and 91 as healthy incorrectly.
+* Out of the 18,759 loan status's that are healthy, the model predicted 18,668 as healthy correctly and 91 as healthy incorrectly.
 
-Out of the 625 loan status's that are non-healthy (high-risk), the model predicted 623 as non-healthy correctly and 2 as non-healthy incorrectly.
+* Out of the 625 loan status's that are non-healthy (high-risk), the model predicted 623 as non-healthy correctly and 2 as non-healthy incorrectly.
 
 
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
-* Logistic Regression Model fitted with Imbalanced Data:
+# Logistic Regression Model fitted with Imbalanced Data:
 
 
 The Logistic Regression model fitted with the Imbalanced DataSet predicted correctly healthy loans 100% of the time non-healthy loans 87% of the time.
@@ -51,14 +50,14 @@ The Logistic Regression model fitted with the Imbalanced DataSet predicted corre
 
 The model fitted with imbalanced data has a higher possibility of making these mistakes:
 
-a healthy loan (low-risk) is classified as a non-healthy loan (high-risk).
-a non-healthy loan (high-risk) is classified as a healthy loan (low-risk).
+* a healthy loan (low-risk) is classified as a non-healthy loan (high-risk).
+* a non-healthy loan (high-risk) is classified as a healthy loan (low-risk).
 
 According to the models recall scores, the model made no mistakes when predicting healthy loans (100% recall) and was 11% inaccurate when predicted non-healthy loans(89% recall). The model also generated an accuracy score of 94% but could be improved if the dataset was more balanced.
 
 
 
-* Logistic Regression Model fitted with Balanced (oversampled) Data:
+# Logistic Regression Model fitted with Balanced (oversampled) Data:
 
 
 The Logistic Regression model fitted with the OverSampled DataSet predicted accurately healthy loans 100% of the time and non-healthy loans 87% of the time.
@@ -66,8 +65,8 @@ The Logistic Regression model fitted with the OverSampled DataSet predicted accu
 
 The model fitted with balanced (oversampled) data has a much lower possibility of making these mistakes:
 
-a healthy loan (low-risk) is classified as a non-healthy loan (high-risk).
-a non-healthy loan (high-risk) is classified as a healthy loan (low-risk).
+* a healthy loan (low-risk) is classified as a non-healthy loan (high-risk).
+* a non-healthy loan (high-risk) is classified as a healthy loan (low-risk).
 
 According to the models recall scores, the model made no mistakes when predicting both healthy and non-healthy loans. The model also generated an accurace score of 99.6% due to the dataset being balanced.
 
@@ -76,9 +75,9 @@ According to the models recall scores, the model made no mistakes when predictin
 
 A lending company might want a model that requires classifying healthy loans and non-healthy loans correctly most of the time:
 
-healthy loans being identified as a non-healthy loan might be costly for a lending company since it might cause the loss of customers.
+* healthy loans being identified as a non-healthy loan might be costly for a lending company since it might cause the loss of customers.
 
-non-healthy loans being identified as a healthy loan might be more costly for a lending company due to the loss of funds being provided by the lender.
+* non-healthy loans being identified as a healthy loan might be more costly for a lending company due to the loss of funds being provided by the lender.
 
 The Logistic Regression model fitted with OverSampled data performed much better than the model fitted with Imbalanced data due to the data being balanced and generating a higher accuracy score and a higher recall, indicating that the model will make extremely fewer mistakes when classifying non-healthy loans.
 
@@ -87,15 +86,15 @@ The lending company would most likely want fewer False Positives due to the high
 
 Model fitted with Imbalanced Data:
 
-67 (FALSE POSITIVES) --> The actual value is non-healthy and the predicted value is healthy
+* 67 (FALSE POSITIVES) --> The actual value is non-healthy and the predicted value is healthy
 
-80 (FALSE NEGATIVES) --> The actual value is healthy and the predicted value is non-healthy
+* 80 (FALSE NEGATIVES) --> The actual value is healthy and the predicted value is non-healthy
 
 
 Model fitted with Oversampled, Balanced Data:
 
-2 (FALSE POSITIVES) --> The actual value is non-healthy and the predicted value is healthy
+* 2 (FALSE POSITIVES) --> The actual value is non-healthy and the predicted value is healthy
 
-91 (FALSE NEGATIVES) --> The actual value is healthy and the predicted value is non-healthy
+* 91 (FALSE NEGATIVES) --> The actual value is healthy and the predicted value is non-healthy
 
 According to the confusion matrices, the number of False Postives drastically decreases indicating the model will classify healthy & non-healthy loans significantly more correct for the oversampled data than with the imbalanced data. Based off of this analysis, I would recommend using Model 2 (Logistic Regression Model fitted with Balanced (oversampled) data.
