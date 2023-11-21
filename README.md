@@ -42,7 +42,7 @@ According to the confusion matrix in step 3 [Create a LRM w/ Resampled(oversampl
 ## Results
 
 
-# Logistic Regression Model fitted with Imbalanced Data:
+### Logistic Regression Model fitted with Imbalanced Data:
 
 
 The Logistic Regression model fitted with the Imbalanced DataSet predicted correctly healthy loans 100% of the time non-healthy loans 87% of the time.
@@ -57,7 +57,7 @@ According to the models recall scores, the model made no mistakes when predictin
 
 
 
-# Logistic Regression Model fitted with Balanced (oversampled) Data:
+### Logistic Regression Model fitted with Balanced (oversampled) Data:
 
 
 The Logistic Regression model fitted with the OverSampled DataSet predicted accurately healthy loans 100% of the time and non-healthy loans 87% of the time.
